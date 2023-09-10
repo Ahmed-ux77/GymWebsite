@@ -1,0 +1,100 @@
+:root{
+    --primary-color:#eb4d4b;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: rgb(0, 0, 0) ;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.firstWord{
+    color: #09dafa;
+}
+.secondword{
+    color: white;
+}
+.header{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+    align-items: center;
+    height:110px;
+    border-bottom: 3px solid #09dafa;
+}
+.logo{
+   color: #fff;
+   font-size: 25px;
+}
+.menu{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   height: 100%;
+}
+.menu li{
+    /* margin: 0px .2rem; */
+    padding: 0 1.2rem 0.3rem 1.2rem;
+    border-bottom: 5px solid transparent;
+    transition: #09dafa;
+    cursor:pointer;
+    font-size: 15px;
+    position: relative;
+}
+.menu li::before{
+    content: "";
+    position: absolute;
+    width:3%;
+    height:5px;
+    left:0;
+    transition: #09dafa;
+    bottom: -6px;
+}
+.menu li:hover:before {
+    width:100%;
+    
+    background: #09dafa;
+}
+.homeSec{
+    background: url(img/victor-freitas-WvDYdXDzkhs-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height:1000px;
+    width:100%;
+    position: absolute;
+}
+.text{
+    color: #09dafa;
+    margin:0px;
+    text-align: center;
+    padding: 250px;
+    font-size: 46px;
+}
+.text2{
+    color: #09dafa;
+    margin:-245px;
+    text-align: center;
+    padding: 0px;
+    font-size: 25px;
+    /* text-decoration: underline; */
+}
+.Btn{
+    display: block;
+    width: 10%;
+    padding: 10px;
+    border: 2px solid #09dafa;
+    border-radius: 5px;
+    background-color: #09dafa;
+    color: black;
+    cursor: pointer;
+    margin: 687px;
+    margin-top: 255px;
+    margin-right: 34px;   
+}
+

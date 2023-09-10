@@ -1,0 +1,111 @@
+:root{
+    --primary-color:#eb4d4b;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background: rgb(0, 0, 0) ;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+.firstWord{
+    color: #09dafa;
+}
+.secondword{
+    color: white;
+}
+.header{
+    display:flex;
+    width:100%;
+    justify-content: space-around;
+    align-items: center;
+    height:110px;
+    border-bottom: 3px solid #09dafa;
+}
+.logo{
+   color: #fff;
+   font-size: 25px;
+}
+.menu{
+   list-style: none;
+   display: flex;
+   align-items: center;
+   height: 100%;
+}
+.menu li{
+    padding: 0 1.2rem 0.3rem 1.2rem;
+    border-bottom: 5px solid transparent;
+    transition: #09dafa;
+    cursor:pointer;
+    font-size: 15px;
+    position: relative;
+}
+.menu li::before{
+    content: "";
+    position: absolute;
+    width:3%;
+    height:5px;
+    left:0;
+    transition: #09dafa;
+    bottom: -6px;
+}
+.menu li:hover:before {
+    width:100%;
+    
+    background: #09dafa;
+}
+.container{
+    padding: 20px;
+    margin: 89px auto;
+    box-sizing: border-box;
+    width: 80%;
+    border: 2px solid #09dafa;
+    background-color: black;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    background-image: url(img/fitness-gym-logo-9191CD4CF2-seeklogo.com.png);
+}
+.container h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #09dafa;  
+}
+.input{
+    display: block;
+    width: 100%;
+    margin-bottom: 13px;
+    padding: 18px;
+    border: 2px solid #09dafa;
+    border-radius: 5px;
+    background-color:white;
+    color:rgb(0, 0,0);
+}
+.textarea{
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #09dafa;
+    border-radius: 5px;
+    background-color:white;
+    color:rgb(0, 0,0);
+}
+form button{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #09dafa;
+    border-radius: 5px;
+    background-color: #09dafa;
+    color: black;
+    cursor: pointer;
+}
+form button:hover{
+    background-color: rgb(4, 117, 154);
+}
